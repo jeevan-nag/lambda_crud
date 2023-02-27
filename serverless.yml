@@ -6,6 +6,8 @@ provider:
   runtime: nodejs18.x
   stage: dev
   region: us-east-1
+  deploymentBucket:
+    name: lambda-crud-dev 
   deploymentMethod: direct
   timeout: 30
 
