@@ -6,8 +6,8 @@ on:
       - main 
   
 jobs:
-  lambda-deploy:
-  	runs-on: ubuntu-latest
+  build: 
+    runs-on: ubuntu-latest 
     steps:
       - name: Checkout to repo
         uses: actions/checkout@v2
@@ -27,4 +27,4 @@ jobs:
         run: npm ci
      
       - name: Deploy lambda function
-        run: sls deploy
+        run: serverless deploy
