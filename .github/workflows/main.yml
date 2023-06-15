@@ -28,4 +28,3 @@ jobs:
      
       - name: Deploy lambda function
         run: serverless deploy
-        
